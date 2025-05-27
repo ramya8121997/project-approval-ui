@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Project Approval Portal (PAP)
 
 // ✅ OBJECTIVE
@@ -76,3 +77,6 @@ client/
 // ✅ API endpoints tested via Postman
 
 // Let me know if you want to continue with React UI now or switch to testing!
+=======
+# project-approval-ui
+>>>>>>> 655d895b26077de46969c39c0241d73ac91ef737
