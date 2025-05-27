@@ -1,82 +1,111 @@
-<<<<<<< HEAD
-// Project Approval Portal (PAP)
+# Project Approval Portal - React Frontend
 
-// ✅ OBJECTIVE
-// A role-based portal to submit, approve, or reject project approval requests.
-// Built using Node.js, Express, MongoDB, JWT, React.
+This is the frontend for the **Project Approval Portal** built using **React**. It supports user authentication and role-based dashboards for Managers and Employees.
 
-// ✅ FINAL FOLDER STRUCTURE
+## 📁 Folder Structure
 
-// Backend (Node.js + Express + MongoDB)
-project-approval-portal/
-├── controllers/
-│   ├── authController.js
-│   └── projectController.js
+```
+project-approval-ui/
 │
-├── models/
-│   ├── User.js
-│   └── ProjectRequest.js
-│
-├── middlewares/
-│   ├── authMiddleware.js
-│   └── roleMiddleware.js
-│
-├── routes/
-│   ├── authRoutes.js
-│   └── projectRoutes.js
-│
-├── config/
-│   └── db.js
-│
-├── utils/
-│   └── jwt.js
-│
-├── app.js
-├── .env
-└── package.json
-
-// Frontend (React)
-client/
-├── public/
+├── public/                 # Static assets (index.html, favicon, etc.)
 ├── src/
-│   ├── components/
-│   │   ├── LoginForm.jsx
-│   │   ├── RegisterForm.jsx
-│   │   ├── Dashboard.jsx
-│   │   └── ProjectForm.jsx
-│   │
-│   ├── api/
-│   │   └── api.js
-│   │
-│   ├── App.js
-│   ├── index.js
-│   └── index.css
-├── package.json
-└── .env
+│   ├── components/         # Reusable UI components
+│   ├── pages/              # Page components (Login, Dashboards)
+│   ├── services/           # Axios API calls
+│   ├── utils/              # Helper functions
+│   ├── App.js              # Main app component with routing
+│   ├── index.js            # React root render
+├── .env                    # Environment variables
+├── package.json            # Project metadata and dependencies
+└── README.md               # Project documentation
+```
 
-// ✅ KEY FEATURES IMPLEMENTED
-// 1. Signup/Login using JWT
-// 2. Role-based Authorization (employee/manager/admin)
-// 3. Project request flow
-// 4. MongoDB schema with Mongoose
-// 5. JWT + authMiddleware + roleMiddleware
-// 6. Ready for frontend integration
+## 🚀 Getting Started
 
-// ✅ READY FOR TESTING & FRONTEND
-// Next: Write Jest tests OR Build React UI
+### Prerequisites
 
-// 🔄 Future Add-ons
-// - Email notifications
-// - File upload
-// - Admin dashboard
+Make sure you have the following installed:
 
-// ✅ You can run the backend with:
-// npm run dev  (uses nodemon)
+* **Node.js** (v18+ recommended)
+* **npm** or **yarn**
 
-// ✅ MongoDB connection ready via db.js
-// ✅ API endpoints tested via Postman
+### Installation
 
-// Let me know if you want to continue with React UI now or switch to testing!
-=======
-# project-approval-ui
->>>>>>> 655d895b26077de46969c39c0241d73ac91ef737
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/your-username/project-approval-ui.git
+cd project-approval-ui
+```
+
+2. **Install dependencies**
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. **Set up environment variables**
+
+Create a `.env` file in the root folder with the following:
+
+```
+REACT_APP_API_BASE_URL=http://localhost:5000/api
+```
+
+> Adjust the URL if your backend runs on a different port or domain.
+
+4. **Start the development server**
+
+```bash
+npm start
+# or
+yarn start
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
+
+---
+
+## 👥 Roles
+
+* **Manager**: Can approve or reject employee project requests.
+* **Employee**: Can submit new project requests and view status updates.
+
+Role-based dashboard routing is handled in `App.js` using conditional route rendering based on `user?.role`.
+
+---
+
+## 🛠️ Available Scripts
+
+```bash
+npm start           # Run the app in development mode
+npm run build       # Create a production build
+npm test            # Run test suite (if available)
+npm run lint        # Lint your code (if linting is configured)
+```
+
+---
+
+## ⚙️ Tech Stack
+
+* React
+* React Router DOM
+* Axios
+* Bootstrap or Tailwind CSS
+* dotenv for environment variable management
+
+---
+
+## ✅ Features
+
+* 🔐 Role-based login
+* 📄 Employee request submission
+* 📋 Manager approval dashboard
+* 🌐 Axios-based API communication
+* 📱 Responsive design
+
+---
+
+
